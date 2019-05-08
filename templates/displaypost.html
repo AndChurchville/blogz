@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
   
-  
-    <h3>{{posted_blog.title}}</h3>
-        {{posted_blog.body}}
+    <div class="singlepost">
+    {{posted_blog.title}}  
     
+    <p id="posttext">{{posted_blog.body}}</p>
+    </div>
+  
         
        
-    <hr />
+
    
        
             

@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <style>
-           .error{
-               color:red;
-           }
-       </style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/blog-style.css') }}">
     </head>
 <body>
-<a href="/blog">Homepage</a>
-<a href="/newpost">Create A Post</a> 
-
+<div class="navbar">
+<a id="link" href="/blog">Homepage</a>
+<a id="link" href="/newpost">Create A Post</a> 
+</div>
     {% block content %}
     {% endblock %}
 

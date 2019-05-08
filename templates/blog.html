@@ -7,14 +7,18 @@
     {% if entry|length == 0 %}
     <h3>No posts yet!</h3>
     {% else %}
-    <h3>Blog Posts</h3>
+    <h2>Blog Posts</h2>
+    
         <ul style="list-style-type:none;">
             {% for entry in posted_blog %}
-            <a href="/displaypost?id={{entry.id}}"><h3><li>{{entry.title}}</li></h3></a>
+            <div class="bloglist">
+            <a id="titlelink" href="/displaypost?id={{entry.id}}"><h3></h3><li>{{entry.title}}</li></h3></a>
             <li>{{entry.body}}</li>
-            <hr />
+            </div>
+            
             {% endfor %}
         </ul>
+   
 
     {% endif %}
     
