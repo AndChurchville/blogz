@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Create a Blog Post!</h3>
+    <form method="POST">
+        
+        <label>
+            <p>Create a Title</p>
+            <input type="text" name="title" id="title" value="{{title_log}}">
+            <p class="error">{{title_error}}</p>
+        </label>
+    </br>
+    </br>
+        
+        <label>
+            <p>Create a Post</p>
+            <textarea rows= "5" cols= "50" name="entry" id="entry" value="{{entry_log}}"></textarea>
+        </label>
+        <input type="submit" value="Add Post" />
+        <p class="error">{{entry_error}}</p>
+        
+        <input type="hidden" id='postid' name='postid' value='{{newpost}}'>
+        
+    
+    </form>
+     
+{% endblock %}

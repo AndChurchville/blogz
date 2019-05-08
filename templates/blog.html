@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Build A Blog!</h1>
+    
+
+
+    {% if entry|length == 0 %}
+    <h3>No posts yet!</h3>
+    {% else %}
+    <h3>Blog Posts</h3>
+        <ul style="list-style-type:none;">
+            {% for entry in posted_blog %}
+            <a href="/displaypost?id={{entry.id}}"><h3><li>{{entry.title}}</li></h3></a>
+            <li>{{entry.body}}</li>
+            <hr />
+            {% endfor %}
+        </ul>
+
+    {% endif %}
+    
+
+   
+{% endblock %}
