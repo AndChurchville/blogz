@@ -59,6 +59,17 @@ h3{
     font-size: 20px;
    
 }
+.user{
+    font-size: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+a.user:visited{
+    font-size: 10px;
+    text-align: left;
+    color: rgb(167, 223, 245);
+}
+
 
 /* New Post Page */
 .newpost {
@@ -68,7 +79,17 @@ h3{
 }
 
 input[type=text], textarea {
-    width: 30%; /* Full width */
+   
+    padding: 5px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 2px; /* Add a top margin */
+    margin-bottom: 6px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=password], textarea {
+   
     padding: 5px; /* Some padding */  
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
@@ -84,10 +105,26 @@ input[type=submit] {
     padding: 5px 10px;
     border-radius: 4px;
     display: block;
-
-
 }
 
+.newlabels {
+    font-size: 20px;
+}
+/* login page */
+.login {
+   text-align: center;
+   margin-left: 39%;
+   margin-bottom: 2%;
+    
+}
+.signup {
+    
+    margin-left: 39%;
+    margin-bottom: 2%;
+     
+ }
+
+/* whatever */
 p {
     font-size: 20px;
     text-align: center;
@@ -96,6 +133,7 @@ p {
 
 .error{
     color:red;
+    font-size: 20px:
 }
 
 /* Individual Post */
@@ -114,3 +152,14 @@ p {
 #posttext{
     font-weight: 100;
 }
+
+.userlist{
+    margin-left: 37%;
+}
+
+.sourcelink{
+    color: white;
+    
+}
+
+

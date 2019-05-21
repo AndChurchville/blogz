@@ -4,16 +4,17 @@
     
 
 
-    {% if entry|length == 0 %}
+{% if entry|length == 0 %}
     <h3>No posts yet!</h3>
-    {% else %}
-    <h2>Blog Posts</h2>
+{% else %}
+    <h2>All Blog Posts</h2>
     
         <ul style="list-style-type:none;">
             {% for entry in posted_blog %}
             <div class="bloglist">
             <a id="titlelink" href="/displaypost?id={{entry.id}}"><h3></h3><li>{{entry.title}}</li></h3></a>
             <li>{{entry.body}}</li>
+            <p class="user">Posted by: <a class="sourcelink" href="/blog?userid={{entry.owner_id}}">{{entry.owner.username}}</a></p>
             </div>
             
             {% endfor %}
@@ -21,6 +22,8 @@
    
 
     {% endif %}
+
+ 
     
 
    
